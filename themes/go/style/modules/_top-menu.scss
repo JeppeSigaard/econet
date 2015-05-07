@@ -1,0 +1,18 @@
+.top-menu{
+
+    text-align: right;
+    float:right;
+    font-size: 0px;
+    padding-right: 5px;
+
+    a{
+        display: inline-block;
+        font-size:.7rem;
+        padding:10px 5px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+}

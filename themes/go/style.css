@@ -1,0 +1,20 @@
+/*
+Theme name: GO WP Theme
+Author URI: http://smartmonkey.dk
+Author: Smartmonkey
+Description: Tema til GO/ØKONET/BU/UBU. Bruger meta box, tax-meta-class og wp super cache, men er ellers bygget fra bunden af SmartMonkey IvS. Se mu-plugins-mappen for grundindstillinger, som kan afvige fra en standard Wordpress-installation, herunder omdistribuering af adminstratorpanel, skalering af billeder, tilføjelse af container-div til indlejrede videoer, opsætning af metaoplysniger i head, mm. mu-plugins-mappen er ikke en del af dette tema, men hav øje for ekstra metafelter, hvis du gerne vil skifte tema. se codex.wordpress.org for hjælp til opsætning af metaoplysninger.
+Version: 1.0
+Tags: custom, smartmonkey, made to order, yours alone, build from the bottom, template development, WP advanced
+*/
+
+
+/*----------------------*/
+/* Wheres the markup??? */
+/*----------------------*/
+/*
+
+Dette tema er skrevet med scss, så du kan se en hel struktur af styling i /style - mappen.
+Den færdige, komprimerede fil hedder main.css, og ligger i roden. send evt. en email til jeppe@smartmonkey.dk, hvis du skal igang med en preprocessor for første gang. Du vil elske det!
+
+
+*/

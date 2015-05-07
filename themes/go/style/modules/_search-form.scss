@@ -1,0 +1,139 @@
+$select-color:#555;
+$select-width:200px;
+$select-height:30px;
+$select-background:#f0f0f0;
+$form-font-size:13px;
+
+.search-module{
+    background:#f0f0f0;
+    padding:15px;
+    overflow: visible;
+}
+
+form.search{
+
+    position:relative;
+    display: block;
+    max-width:640px;
+    margin:0px auto 0px;
+    box-sizing: border-box;
+    background:$contrast-2;
+    padding:10px;
+    border-radius: 5px;
+
+    label,input[type="submit"],select{
+        display:none;
+    }
+
+    .search-container{
+        margin-right:210px;
+    }
+
+    input[type="text"]{
+        box-sizing: inherit;
+        width:100%;
+        font-size:$form-font-size;
+        padding:0px 10px;
+        height:$select-height;
+        line-height: $select-height;
+        background:$select-background;
+        color:$select-color;
+        border:none;
+        outline:none;
+
+        &:hover,&:focus{
+            background:#efefef;
+        }
+
+
+        &::-webkit-input-placeholder {
+           color: $select-color;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+           color: $select-color;
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+           color: $select-color;
+        }
+
+        &:-ms-input-placeholder {
+           color: $select-color;
+        }
+    }
+
+    .select {
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        font-size: $form-font-size;
+        right:10px;
+        top:10px;
+        color: $select-color;
+        width: $select-width;
+        height: $select-height;
+    }
+    .select-styled {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $select-background;
+        padding: 0px 15px;
+        line-height:$select-height;
+        &:after {
+            content:"";
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-color: $select-color transparent transparent transparent;
+            position: absolute;
+            top: 13px;
+            right: 10px;
+        }
+        &:hover {
+            background-color: darken($select-background, 2);
+        }
+        &:active, &.active {
+            background-color: darken($select-background, 5);
+            &:after {
+              top: 7px;
+              border-color: transparent transparent $select-color transparent;
+            }
+        }
+    }
+
+    .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: darken($select-background, 5);
+        li {
+            margin: 0;
+            padding: 12px 0;
+            text-indent: 15px;
+            border-top: 1px solid darken($select-background, 10);
+
+            &:hover {
+                color: $select-background;
+                background: $select-color;
+            }
+
+            &[rel="hide"] {
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+

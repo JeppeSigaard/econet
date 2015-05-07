@@ -1,0 +1,25 @@
+header{
+
+    background: #f0f0f0;
+    position:relative;
+    box-shadow:0px 0px 10px rgba(0,0,0,.3);
+
+    >div{
+        max-width:960px;
+        margin:auto;
+    }
+
+    h1{
+        max-width:150px;
+        height:55px;
+        margin:10px 15px;
+        text-indent: -9999px;
+        background:url('../libs/img/logo.svg') no-repeat center;
+        background-size:150px;
+    }
+
+    h2{
+        font-size:12px;
+        margin:0px 15px 10px;
+    }
+}
